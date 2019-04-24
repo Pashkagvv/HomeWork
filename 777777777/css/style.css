@@ -1,18 +1,24 @@
 body {
     font-family: 'Lato', sans-serif;
-    background: url(../img/bg.jpg) no-repeat center;
+    background: url(../img/bg.jpg) no-repeat top;
    
 }
 
 .tab{
+    
     text-align: center;
     color: #b7bacd;
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
     cursor: pointer;
+    
+    
 }
-
+a{
+    position: relative;
+    z-index: 3;
+}
 .tabWrapper {
     display: flex;
     padding-bottom: 27px;
@@ -49,6 +55,7 @@ body {
 
 img {
     margin-top: 5px;
+    max-width: 160px;
 }
 
 .rating {
@@ -99,16 +106,19 @@ span {
 .tab1 {
     margin-left: 48px;
     margin-top: 32px;
+    text-align: center;
 }
 
 .tab2 {
     margin-top: 32px;
     margin-left: 10px;
+    text-align: center;
 }
 
 .tab3 {
     margin-top: 32px;
     margin-right: 31px;
+    text-align: center;
 }
 
 

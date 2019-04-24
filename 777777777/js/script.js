@@ -29,14 +29,14 @@ function VisiblContent(i) {
 }
 
 document.getElementById('tabs').onclick = function(event){
-     var target = event.target;
-     if (target.className == 'tabs') {
-         for (var i = 1; i < tab.length; i++) {
-            if(target == tab[i]){
-                VisiblContent(i);
-                break;
-            }
-             
-         }
-     }
- }
+    var target = event.target;
+    if ( false !== target.className.indexOf('tab') ) {
+        for (var i = 0; i < tab.length; i++) {
+           if(target == tab[i]){
+               VisiblContent(i);
+               break;
+           }
+
+       }
+   }
+}
